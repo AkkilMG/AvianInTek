@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AvianInTek - Company Website
+
+Welcome to the **AvianInTek** repository! This project is built with **Next.js**, **TailwindCSS**, and **TypeScript**, and serves as the landing page for our company, providing insights into our services and mission.
+
+---
+
+## Table of Contents
+
+- [About AvianInTek](#about-avianintek)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## About AvianInTek
+
+**AvianInTek** is a SaaS-based venture offering a variety of services, including:
+
+- **Storage Facility**: Freemium-based storage for image files under 20 MB with encryption and sharing capabilities.
+- **Customer Engagement Platform** (Upcoming): Tools to enhance customer interactions and retention.
+- Additional user-friendly and community-focused initiatives.
+
+This website serves as our digital home, highlighting our mission, services, and commitment to innovation.
+
+---
+
+## Features
+
+- Responsive design using **Tailwind CSS**.
+- Fast and SEO-friendly implementation with **Next.js**.
+- Type-safe development with **TypeScript**.
+- Lightweight and efficient for optimal user experience.
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Programming Language**: [TypeScript](https://www.typescriptlang.org/)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (>= 16)
+- npm (>= 8) or yarn
+
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+# Clone the repository
+git clone https://github.com/AvianInTek/avianintek.git
+
+# Navigate to the project directory
+cd avianintek
+
+# Install dependencies
+npm install
+# OR
+yarn install
+```
+
+### Running the Application
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
+# OR
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to `http://localhost:3000` to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build the application for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# OR
+yarn build
+```
 
-## Learn More
+Serve the production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+# OR
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are welcome! If you have ideas or enhancements for this project, please open an issue or submit a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Steps to Contribute
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Commit your changes.
+4. Push to the branch and create a pull request.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+**Thank you for visiting our repository! We hope AvianInTek inspires innovation and collaboration.**
