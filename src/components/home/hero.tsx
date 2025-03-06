@@ -45,7 +45,7 @@ const Hero = ({ team }: any) => {
                             </span>
                         </a>
                     </div>
-                    <div className="text-center md:text-left mt-10">
+                    <div className="text-center md:text-left mt-10 hidden md:block">
                         <p className="text-4xl font-extrabold text-purple-500 leading-tight">1.2K</p>
                         <p className="text-lg text-gray-300 mt-2">Requests per day from our applications</p>
                     </div>
@@ -54,8 +54,8 @@ const Hero = ({ team }: any) => {
             <div className="absolute top-0 right-0 h-full hidden md:block">
                 <img draggable={false} src="assets/images/background.png" alt="Background mobile in hand" className="h-full object-cover" />
             </div>
-            <div className="absolute bottom-0 right-0 mx-auto w-full max-w-lg md:max-w-xl">
-                <img draggable={false} src={hand} alt="Mobile in Hand" width={1300} height={1420} className="relative z-20 drop-shadow-2xl" />
+            <div className="absolute bottom-0 right-0 mx-auto w-full max-w-xs sm:max-w-sm md:max-w-lg md:max-w-xl">
+                <img draggable={false} src={hand} alt="Mobile in Hand" width={650} height={710} className="relative z-20 drop-shadow-2xl" />
             </div>
             <div className="absolute bottom-10 right-64 transform -translate-x-1/2 hidden lg:flex flex-col space-y-8 items-center z-30">
                 <div className="flex items-center bg-blue-100 text-blue-900 rounded-lg shadow-md w-72 border-2 border-blue-500 transform -rotate-6">

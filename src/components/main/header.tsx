@@ -19,7 +19,7 @@ const Header = () => {
                         <li><a draggable={false} href="#" className="hover:text-purple-300 transition duration-300 md:text-gray-500 xl:text-white">FAQ</a></li>
                     </ul>
                 </div>
-                <button onClick={() => setMenuOpen(!menuOpen)} className="sm:hidden flex items-center text-xl p-2 focus:outline-none">
+                <button onClick={() => setMenuOpen(!menuOpen)} className="sm:hidden text-lg flex items-center text-xl p-2 focus:outline-none">
                 ☰
                 </button>
                 <ul className={`${menuOpen ? "flex" : "hidden"} flex-col sm:flex-row sm:space-x-12 sm:ml-24 items-center mt-4 sm:mt-0 bg-gray-800 sm:bg-transparent sm:static absolute right-4 left-4 sm:right-auto sm:left-auto sm:top-auto top-16 py-4 sm:py-0 rounded-lg sm:rounded-none`}>
