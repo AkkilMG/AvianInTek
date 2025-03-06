@@ -1,9 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const Hero = () => {
+const Hero = ({ team }: any) => {
     const picdb = "https://picdb.vercel.app";
+    const [mention, setMention] = useState(0);
     const [hand, setHand] = useState("assets/images/tablet-in-hand.png");
+    useEffect(() => {
+        const randomMention = Math.floor(Math.random() * team.length);
+        setMention(randomMention);
+    }, []);
 
     useEffect(() => {
         const updateHandImage = () => {
@@ -20,6 +25,7 @@ const Hero = () => {
         return () => window.removeEventListener("resize", updateHandImage); // Cleanup
     }, []);
 
+
     return (
         <section id="home" className="relative bg-black text-white h-screen overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 pt-32 md:pt-32 lg:pt-32 grid md:grid-cols-2 items-center gap-12 relative z-10">
@@ -31,7 +37,7 @@ const Hero = () => {
                         We are a small team of developers trying to make life easier for people by providing them with the best products.
                     </p>
                     <div className="flex flex-row md:flex-row gap-4 justify-start">
-                        <a href={picdb} className="bg-white text-black px-5 py-3 rounded-lg font-medium shadow-md hover:shadow-lg">
+                        <a draggable={false} href={picdb} className="bg-white text-black px-5 py-3 rounded-lg font-medium shadow-md hover:shadow-lg">
                             <span className="block text-sm">Free Image Storage</span>
                             <span className="text-lg font-bold flex items-center">
                                 <img draggable={false} src="https://picdb.vercel.app/assets/logo/PicDB.png" className="h-5 w-5 mr-2" />
@@ -62,36 +68,40 @@ const Hero = () => {
                     </div>
                     <p className="pl-3 font-medium">Active team to assist you</p>
                 </div>
-                <div className="flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow-md w-72 border-2 border-blue-500 transform translate-x-12">
-                    <div className="flex items-center">
-                        <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
-                            <img draggable={false} src="assets/team/circle/akkil.png" alt="Avatar" width={48} height={48} />
+                <a draggable={false} href="https://www.linkedin.com/in/akkilmg">
+                    <div className="flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow-md w-72 border-2 border-blue-500 transform translate-x-12">
+                        <div className="flex items-center">
+                            <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
+                                <img draggable={false} src="assets/team/circle/akkil.png" alt="Avatar" width={48} height={48} />
+                            </div>
+                            <div>
+                                <p className="text-sm text-gray-600">Team member</p>
+                                <p className="font-medium text-gray-800">Akkil M G</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className="text-sm text-gray-600">Cofounder & CEO</p>
-                            <p className="font-medium text-gray-800">Akkil M G</p>
-                        </div>
-                    </div>
-                    <div className="text-right">
-                        <p className="text-sm text-gray-600">From</p>
-                        <p className="font-medium text-gray-800">1 Jan</p>
-                    </div>
-                </div>
-                <div className="flex items-center justify-between bg-black px-4 py-3 rounded-lg shadow-md w-72 border-2 border-blue-500 transform rotate-6">
-                    <div className="flex items-center">
-                        <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
-                            <img draggable={false} src="assets/team/circle/srujan.png" alt="Avatar" width={48} height={48} />
-                        </div>
-                        <div>
-                            <p className="text-sm text-white">Cofounder & COO</p>
-                            <p className="font-medium text-gray-100">Srujan Rai</p>
+                        <div className="text-right">
+                            <p className="text-sm text-gray-600">From</p>
+                            <p className="font-medium text-gray-800">1 Jan</p>
                         </div>
                     </div>
-                    <div className="text-right">
-                        <p className="text-sm text-gray-100">From</p>
-                        <p className="font-medium text-gray-100">1 Jan</p>
+                </a>
+                <a draggable={false} href={`https://www.linkedin.com/in/${team[mention].linkedin}`}>
+                    <div className="flex items-center justify-between bg-black px-4 py-3 rounded-lg shadow-md w-72 border-2 border-blue-500 transform rotate-6">
+                        <div className="flex items-center">
+                            <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
+                                <img draggable={false} src={`assets/team/circle/${team[mention].avatar}`} alt="Avatar" width={48} height={48} />
+                            </div>
+                            <div>
+                                <p className="text-sm text-white">{team[mention].role}</p>
+                                <p className="font-medium text-gray-100">{team[mention].name}</p>
+                            </div>
+                        </div>
+                        <div className="text-right">
+                            <p className="text-sm text-gray-100">From</p>
+                            <p className="font-medium text-gray-100">{team[mention].from}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
     );

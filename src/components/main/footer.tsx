@@ -9,7 +9,7 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-3 text-gray-100">Services</h4>
               <ul>
-                <li className="mb-1 text-gray-300 text-sm"><a href="upload">PicDB: Image Storage</a></li>
+                <li className="mb-1 text-gray-300 text-sm"><a draggable={false} href="upload">PicDB: Image Storage</a></li>
               </ul>
             </div>
             <div>
@@ -51,13 +51,13 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-4">
-            <a href='https://www.linkedin.com/company/avianintek/' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-blue-300 rounded-full flex items-center justify-center">
+            <a draggable={false} href='https://www.linkedin.com/company/avianintek/' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-blue-300 rounded-full flex items-center justify-center">
               <img draggable={false}  src="assets/icons/linkedin.png" width={24} height={24} alt="instagram" />
             </a>
-            <a href='https://github.com/AvianInTek' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-teal-200 rounded-full flex items-center justify-center">
+            <a draggable={false} href='https://github.com/AvianInTek' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-teal-200 rounded-full flex items-center justify-center">
               <img draggable={false}  src="assets/icons/github.png" width={24} height={24} alt="facebook" />
             </a>
-            <a href='https://www.instagram.com/heimancreation/' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center">
+            <a draggable={false} href='https://www.instagram.com/heimancreation/' target='_blank' className="h-8 w-8 bg-gray-100 hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center">
               <img draggable={false}  src="assets/icons/instagram.png" width={24} height={24} alt="twitter" />
             </a>
           </div>
