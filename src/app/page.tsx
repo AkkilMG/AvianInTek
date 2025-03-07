@@ -56,7 +56,7 @@ export default function Home() {
     <div className="bg-white">
       <div>
         <Header />
-        <Hero team={team}/>
+        <Hero team={team.slice(1)}/>
         <Insights />
         <ServicesSection />
         {/* <FeaturesSection /> */}

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 const Hero = ({ team }: any) => {
     const picdb = "https://picdb.vercel.app";
+    console.log(team);
     const [mention, setMention] = useState(0);
     const [hand, setHand] = useState("assets/images/tablet-in-hand.png");
     useEffect(() => {
