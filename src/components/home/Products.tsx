@@ -9,7 +9,7 @@ export default function Products() {
     name: "PicDB",
     description: "A simple and secure image storage solution for all your needs.",
     image: "assets/images/picdb-home.png",
-    link: "https://picdb.vercel.app",
+    link: "https://picdb.avianintek.com",
     features: [{
       icon: "assets/icons/features/1.svg",
       description: "Securely store and organize your images with ease, ensuring quick access whenever you need them."

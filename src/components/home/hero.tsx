@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const Hero = ({ team }: any) => {
-    const picdb = "https://picdb.vercel.app";
+    const picdb = "https://picdb.avianintek.com";
     console.log(team);
     const [mention, setMention] = useState(0);
     const [hand, setHand] = useState("assets/images/tablet-in-hand.png");
@@ -41,7 +41,7 @@ const Hero = ({ team }: any) => {
                         <a draggable={false} href={picdb} className="bg-white text-black px-5 py-3 rounded-lg font-medium shadow-md hover:shadow-lg">
                             <span className="block text-sm">Free Image Storage</span>
                             <span className="text-lg font-bold flex items-center">
-                                <img draggable={false} src="https://picdb.vercel.app/assets/logo/PicDB.png" className="h-5 w-5 mr-2" />
+                                <img draggable={false} src="https://picdb.avianintek.com/assets/logo/PicDB.png" className="h-5 w-5 mr-2" />
                                 PicDB
                             </span>
                         </a>
