@@ -68,7 +68,7 @@ const Hero = ({ team }: any) => {
                     </div>
                     <p className="pl-3 font-medium">Active team to assist you</p>
                 </div>
-                <a draggable={false} href="https://www.linkedin.com/in/akkilmg">
+                <a draggable={false} href="https://www.linkedin.com/in/avianintek">
                     <div className="flex items-center justify-between bg-white px-4 py-3 rounded-lg shadow-md w-72 border-2 border-blue-500 transform translate-x-12">
                         <div className="flex items-center">
                             <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
