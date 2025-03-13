@@ -70,7 +70,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-EC03YDBCM1');
           `,
-        }} />
+        }} ></script>
 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased scrollbar`}>
