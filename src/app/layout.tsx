@@ -41,15 +41,15 @@ export default function RootLayout({
         <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
 
         {/* SEO Meta Tags */}
-        <meta name="title" content="AvianInTek - Innovative Tech Solutions" />
+        <meta name="title" content="AvianInTek" />
         <meta name="description" content="AvianInTek provides cutting-edge SaaS solutions, cloud services, and consultancy to empower businesses with technology." />
-        <meta name="keywords" content="AvianInTek, SaaS, Cloud Services, Tech Consultancy, Software Solutions, Next.js, Enterprise Solutions, Web Development" />
+        <meta name="keywords" content="AvianInTek website, Akkil M G, Srujan Rai, Saiesh Savant, Aman Shetty, Mangalore, Mangaluru, Karnataka, India, Indian tech, AvianInTek, SaaS, Cloud Services, Tech Consultancy, Software Solutions, Next.js, Enterprise Solutions, Web Development" />
         <meta name="author" content="AvianInTek Team" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://avianintek.com/" />
-        <meta property="og:title" content="AvianInTek - Innovative Tech Solutions" />
+        <meta property="og:title" content="AvianInTek" />
         <meta property="og:description" content="Providing cutting-edge SaaS solutions, cloud services, and consultancy." />
         <meta property="og:image" content="/assets/seo/website.png" />
 
