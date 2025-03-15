@@ -37,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>AvianInTek</title>
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
 
